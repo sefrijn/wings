@@ -1,0 +1,18 @@
+{
+  "locations" : 
+  [
+    {"name": "Den Haag", "server": "192.168.1.102:1338", "game": "192.168.1.102:1338"},
+    {"name": "Stockholm", "server": "25.94.12.129:1338", "game": "25.94.12.129:1338"}
+  ],
+  
+  "local_idx": 0,
+  "remote_idx": 1,
+
+  "is_master": true, 
+  
+  "specs": {
+    "color_res": {"width": 1024, "height": 330},
+    "depth_res": {"width": 160, "height": 120},
+    "depth_mapping": {"x":251,"y":-74,"width":624,"height":350}
+  }
+}

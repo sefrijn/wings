@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+	<!-- Location of server configuration -->
+	<isLocal>true</isLocal>
+	<path>Assets/Scripts/server.json</path>
+	<localpath>Assets/Scripts/local.json</localpath>	
+	<!-- How fast to move away from world/collided object in order to prevent moving through world	-->
+	<upSpeed>500</upSpeed>
+	<!-- How long to shake camera after collision with object	-->
+	<cameraShakeLength>50</cameraShakeLength>
+	<!-- How long to allow a skeleton to drop out of view before deciding somebody is gone	-->
+	<skeletonBufferDuration>30</skeletonBufferDuration>
+	<!-- Forward velocity	-->
+	<forwardSpeed>600</forwardSpeed>
+	<!-- Gravity factor. How fast to rotate towards earth	-->
+	<pitchDownSpeed>0.7</pitchDownSpeed>
+	<!-- How fast to rotate up because of arm movement	-->
+	<pitchUpSpeed>100</pitchUpSpeed>
+	<!-- Speed of rolling left or right (sideways)	-->
+	<rollSpeed>5</rollSpeed>
+	<!-- Amount of vertical wings movement relative to arms movement	-->
+	<wingMovementFactor>0.6</wingMovementFactor>
+	<!-- Duration of welcome screen with instructions	-->
+	<welcomeDuration>120</welcomeDuration>
+	<!-- Distance to World surface during Startup and Idle process	-->
+	<startupHeight>170</startupHeight>	
+	<!-- Lowest absolute value of Skeleton Arms Y (regardless of orientation or Origin)	-->
+	<mapBottom>20</mapBottom>
+	<!-- Highest absolute value of Skeleton Arms Y (regardless of orientation or Origin)	-->
+	<mapTop>440</mapTop>
+	<!-- 
+		Zet op -1 als Origin van camera feed aan bovenkant van scherm ligt. 
+		Zet op 1 als Origin onder aan scherm ligt	
+	-->
+	<mapInverse>-1</mapInverse>
+	<!-- In Kinect versie wijkt depth map af van Skeleton projected afmetingen. Daarom een skeleton width en height instellen hier	-->
+	<skeletonWidth>640</skeletonWidth>
+	<skeletonHeight>480</skeletonHeight>
+
+	<!-- Range of depth. Map lower value and upper value to rotations up and down	-->
+	<depthNear>0.054</depthNear>
+	<depthFar>0.062</depthFar>
+	<skeletonLeft>140</skeletonLeft>
+	<skeletonRight>15</skeletonRight>
+	<!-- 
+		Set Basic version On or Off
+		Basic Version: Body Z = pitch, Body X = Roll
+		Full Version: Arms movement down = pitch, Arms relative difference = Roll
+	-->
+	<basicVersion>true</basicVersion>
+	<developmentMode>false</developmentMode>
+</Config>
